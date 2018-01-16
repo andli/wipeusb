@@ -1,0 +1,1 @@
+KERNEL=="sd[a-z]", SUBSYSTEM=="block", ACTION=="add", RUN+="/usr/bin/sudo /usr/local/bin/starter.sh $name"

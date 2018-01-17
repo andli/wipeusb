@@ -3,6 +3,8 @@ A headless Raspberry Pi install for overwriting and auto-formatting usb drives. 
 
 See ``provisioning.txt`` for some installation prerequisites.
 
+Blinkstick can be purchased [here](https://www.blinkstick.com/) but can also easily be replaced with some other LED device.
+
 ## Manual
 * Device blinks purple once after boot when ready to receive USB drive
 * Insert one USB drive (does not yet handle multiple)

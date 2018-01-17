@@ -11,3 +11,5 @@ See ``provisioning.txt`` for some installation prerequisites.
 * Blinkstick turns steady green
 * Remove USB drive
 * Profit
+
+![The device in action](https://i.imgur.com/DqaCtljm.png)

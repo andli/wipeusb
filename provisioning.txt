@@ -1,0 +1,23 @@
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install python-pip at udisks -y
+sudo pip install blinkstick
+sudo blinkstick --add-udev-rule
+sudo echo KERNEL=="sd[a-z]", SUBSYSTEM=="block", ACTION=="add", RUN+="/usr/bin/sudo /usr/local/bin/starter.sh $name" >> /etc/udev/rules.d/99-my.rules
+cat > /usr/local/bin/starter.sh << 'endmsg1'
+#!/bin/sh
+
+echo >> /var/log/wipeusb
+echo Stater script launching wipeusb.sh >> /var/log/wipeusb
+echo /usr/local/bin/wipeusb.sh $1 | at now
+endmsg1
+touch /usr/local/bin/wipeusb.sh
+sudo chmod u+x /usr/local/bin/wipeusb.sh
+cat > << 'endmsg2'
+#!/bin/bash
+
+dt=$(date)
+echo $dt Wiping Drive $1 >> /var/log/wipeusb
+endmsg2
+
+sudo /etc/init.d/udev restart

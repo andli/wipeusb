@@ -1,5 +1,5 @@
 # wipeusb
-A headless Raspberry Pi install for overwriting and auto-formatting usb drives. By default the drive is overwritten from /dev/urandom before formatting.
+A headless Raspberry Pi install for overwriting and auto-formatting usb drives. By default the drive is overwritten from ``/dev/urandom`` before formatting.
 
 See ``provisioning.txt`` for some installation prerequisites.
 

@@ -20,4 +20,5 @@ dt=$(date)
 echo $dt Wiping Drive $1 >> /var/log/wipeusb
 endmsg2
 
-sudo /etc/init.d/udev restart
+line="@reboot sudo systemctl restart udev && /usr/local/bin/blinkstick --pulse purple"
+(crontab -u userhere -l; echo "$line" ) | crontab -u userhere -

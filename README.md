@@ -1,7 +1,7 @@
 # wipeusb
 A headless Raspberry Pi install for overwriting and auto-formatting usb drives. By default the drive is overwritten from ``/dev/urandom`` before formatting.
 
-See ``provisioning.txt`` for some installation prerequisites.
+See ``provisioning.txt`` for an (almost) ready-to-run provisioning bash script.
 
 Blinkstick can be purchased [here](https://www.blinkstick.com/) but can also easily be replaced with some other LED device.
 
